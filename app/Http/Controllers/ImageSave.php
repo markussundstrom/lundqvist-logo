@@ -25,9 +25,13 @@ class ImageSave extends Controller
         //Plocka ut info om bilden ur request-objektet och kolla så det verkligen skickats en bild från formuläret 
         $imageinfo = $request->imagefile;
         if ($imageinfo === null) {
-            return view('error', ['errormsg' => 'Du har inte valt någon bild']);
+            return view('error', ['errormsg' => 'Du har inte valt någon fil']);
         }
-        
+        //dd($imageinfo->path);
+        if (!exif_imagetype($imageinfo->path())) {
+            return view('error', ['errormsg' => 'Filen är inte en bildfil']);
+        }
+
         //Skapa imageobjekt, path är sökvägen till den temporära filen som laddats upp
         $image = Image::make($imageinfo->path());
         
