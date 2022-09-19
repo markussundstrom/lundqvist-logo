@@ -17,11 +17,11 @@
         border-style: solid;
         border-color: Gold;
         border-radius: 16px;
-        width: 240px;
+        width: 300px;
         padding: 16px;
     }
     div.separator {
-        width: 240px;
+        width: 300px;
         height: 16px;
         border-width: 0px 8px;
         border-style: hidden;
