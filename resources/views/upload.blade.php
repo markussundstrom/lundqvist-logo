@@ -9,7 +9,7 @@
     }
 
     p {
-        color: LightGreen;
+        color: PaleGreen;
         margin: 0px;
     }
     div.selfield {
