@@ -2,43 +2,9 @@
 <html>
 <head>
 <title>Ladda upp bild</title>
-<style>
-    input [type=submit] {
-        background-color: LightGreen;
-        padding: 10px 10px;
-    }
-
-    p {
-        color: PaleGreen;
-        margin: 0px;
-    }
-    div.selfield {
-        border-width: 8px;
-        border-style: solid;
-        border-color: Gold;
-        border-radius: 16px;
-        width: 300px;
-        padding: 16px;
-    }
-    div.separator {
-        width: 300px;
-        height: 16px;
-        border-width: 0px 8px;
-        border-style: hidden;
-        padding: 0px 16px;
-        background-image: linear-gradient(to right,
-                                    transparent 0%,
-                                    transparent calc(50% - 5px),
-                                    Gold  calc(50% - 4px),
-                                    Gold calc(50% + 4px),
-                                    transparent calc(50% + 5px),
-                                    transparent 100%);
-    }
-
-
-</style>
+<link rel="stylesheet" href="css/green.css">
 </head>
-<body style="background-color:DarkGreen;" >
+<body>
 <form action="view/" method="post" enctype="multipart/form-data">
     @csrf
     <div class="selfield">
