@@ -73,7 +73,7 @@ class ImageSave extends Controller
         //Storage::Disk('public')->put($newname, $image);
         //Spara den färdiga bilden och returnera en view där bilden visas. Vet inte om det här är bästa sättet att göra det på i Laravel
         $image->save(storage_path('app/public') . '/' . $newname);
-        return view('result', ['image' => '../storage/' . $newname]);
+        return view ('result', ['image' => asset('storage') . '/' . $newname]);
     }
 
 
