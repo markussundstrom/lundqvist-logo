@@ -1,6 +1,8 @@
 input[type=submit], input[type=file]::file-selector-button {
-    background-color: Maroon;
+    background-color: DarkRed;
+    box-shadow: 1px 1px 8px Black inset, -1px -1px 8px Black inset;
     color: Gold;
+    text-shadow: 0px 0px 1px Black; 
     border-radius: 8px;
     border-width: 4px;
     border-color: Gold;
@@ -8,8 +10,12 @@ input[type=submit], input[type=file]::file-selector-button {
     padding: 4px 4px;
 }
 
+[type="radio"] {
+    accent-color: Gold;
+}
+
 body {
-    background-color: DarkGreen;
+    background-image: linear-gradient(to right, DarkGreen 0%, DarkGreen 50%, Black 100%);
 }
 
 p {
